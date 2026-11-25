@@ -1,0 +1,106 @@
+.halaman {
+    background-color: #F8E8EC;
+    font-family: Arial, sans-serif;
+}
+.kotak {
+    background-color: white;
+    width: 520px;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #B76E79;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.kotak p,
+.kotak h2{
+    text-align: center;
+}
+.kotak a {
+    color: #49343A;
+    text-decoration: none;
+}
+.kotak a:hover {
+    text-decoration: underline;
+}
+header {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 36px;
+    background-color: white;
+    gap: 20px;
+}
+.logo h1 {
+    color: #D7798B;
+    font-size: 28px;
+    margin: 0;
+}
+
+.logo p {
+    color: #666;
+    font-size: 14px;
+    margin: 4px 0 0;
+}
+nav {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    white-space: nowrap;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+nav a.active {
+    color: #d7798b;
+}
+
+.kotak table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.kotak th,
+.kotak td {
+    border: 1px solid #e8cbd2;
+    padding: 12px;
+    text-align: left;
+}
+
+.kotak th {
+    background-color: #F8E8EC;
+    color: #A64D63;
+    text-align: center;
+}
+
+.kotak tr:nth-child(even) {
+    background-color: #fff7f9;
+}
+
+button:hover {
+    background-color: #A64D63;
+}
+
+input:focus {
+    outline: 1px solid #B76E79;
+    border: 1px solid #B76E79;
+}
