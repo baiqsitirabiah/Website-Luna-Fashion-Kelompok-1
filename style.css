@@ -1,0 +1,498 @@
+:root {
+  --pink-lembut: #f8e8ec;
+  --putih: #ffffff;
+  --dusty-rose: #b76e79;
+  --rose-tua: #a64d63;
+  --cokelat-ungu: #49343a;
+  --pink-rose: #d7798b;
+  --pink-cerah: #d86aa5;
+  --pink-footer: #dc8c99;
+  --peach: #f9e7df;
+  --abu-gelap: #333333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background-color: var(--pink-lembut);
+  color: var(--abu-gelap);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dusty-rose);
+}
+
+nav,
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: var(--putih);
+  box-shadow: 0 2px 8px rgba(183, 110, 121, 0.2);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--pink-rose);
+  letter-spacing: 1px;
+}
+
+nav ul,
+.navbar ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+nav a,
+nav a:link,
+nav a:visited,
+.navbar a,
+.navbar a:link,
+.navbar a:visited {
+  color: var(--abu-gelap);
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+
+nav a:hover,
+nav a.active,
+nav a.aktif,
+.navbar a:hover,
+.navbar a.active,
+.navbar a.aktif {
+  color: var(--pink-rose);
+}
+
+.hero {
+  background-color: var(--pink-lembut);
+  background-image: url("backround_toko_fashion.jpeg");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+  text-align: left;
+}
+
+.hero-teks {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--cokelat-ungu);
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: var(--cokelat-ungu);
+  margin-bottom: 24px;
+}
+
+.hero a,
+.hero button,
+.tombol-hero {
+  display: inline-block;
+  background-color: var(--pink-cerah);
+  color: var(--putih);
+  padding: 12px 32px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.hero a:hover,
+.hero button:hover,
+.tombol-hero:hover {
+  opacity: 0.85;
+}
+
+.judul-bagian {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 1.8rem;
+}
+
+.produk {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 848px;
+  margin: 0 auto;
+  padding: 30px 40px 40px;
+}
+
+.kartu-produk {
+  width: 240px;
+  background-color: var(--putih);
+  border-radius: 16px;
+  padding: 14px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(183, 110, 121, 0.2);
+}
+
+.kartu-produk img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  object-position: center;
+  background-color: var(--putih);
+  border-radius: 12px;
+  margin: 0 auto 12px;
+}
+
+.kartu-produk h3 {
+  color: var(--abu-gelap);
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  text-transform: capitalize;
+}
+
+.harga {
+  display: inline-block;
+  color: var(--pink-rose);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.harga:hover {
+  text-decoration: underline;
+}
+
+.tentang {
+  background-color: var(--peach);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.tentang h2 {
+  margin-bottom: 12px;
+}
+
+.tentang p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--abu-gelap);
+}
+
+.kontak,
+.form-login,
+.form-daftar {
+  max-width: 460px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: var(--putih);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(183, 110, 121, 0.2);
+  color: var(--cokelat-ungu);
+}
+
+.kontak h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+form label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+  color: var(--cokelat-ungu);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--pink-footer);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: var(--putih);
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: var(--rose-tua);
+}
+
+form button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  background-color: var(--pink-cerah);
+  color: var(--putih);
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+form button:hover {
+  opacity: 0.85;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--pink-footer);
+  color: var(--putih);
+  font-size: 0.9rem;
+}
+
+#judul {
+  text-align: center;
+  font-size: 2rem;
+  margin: 32px 20px 8px;
+}
+
+.info {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 8px;
+  padding: 0 20px;
+  color: var(--cokelat-ungu);
+}
+
+.tombol-tambah {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--pink-cerah);
+  color: var(--putih);
+  border: none;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.tombol-tambah:hover {
+  opacity: 0.85;
+}
+
+.keranjang {
+  max-width: 400px;
+  margin: 0 auto 40px;
+  padding: 24px;
+  background-color: var(--putih);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(183, 110, 121, 0.2);
+  text-align: center;
+  color: var(--cokelat-ungu);
+}
+
+.keranjang h3 {
+  margin-bottom: 10px;
+}
+
+#total-belanja {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--pink-rose);
+}
+
+#tombol-reset {
+  margin-top: 14px;
+  padding: 10px 24px;
+  background-color: var(--rose-tua);
+  color: var(--putih);
+  border: none;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+#tombol-reset:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  nav,
+  .navbar {
+    padding: 14px 20px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    min-height: 380px;
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .produk {
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .kartu-produk {
+    width: calc(50% - 7px);
+  }
+
+  .kartu-produk img {
+    height: 180px;
+  }
+
+  #judul {
+    font-size: 1.5rem;
+  }
+}
+
+.kartu-produk.punya-varian {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.kartu-produk.punya-varian:hover {
+  transform: translateY(-4px);
+}
+
+.lihat-varian {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: var(--dusty-rose);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(73, 52, 58, 0.55);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal.buka {
+  display: flex;
+}
+
+.modal-isi {
+  position: relative;
+  width: 100%;
+  max-width: 820px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 28px;
+  background-color: var(--pink-lembut);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(183, 110, 121, 0.35);
+}
+
+.modal-isi h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-tutup {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  border: none;
+  background: none;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--rose-tua);
+  cursor: pointer;
+}
+
+.daftar-varian {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.daftar-varian .kartu-produk {
+  width: 220px;
+}
+
+@media (max-width: 600px) {
+  .modal-isi {
+    padding: 20px 14px;
+  }
+
+  .daftar-varian {
+    gap: 12px;
+  }
+
+  .daftar-varian .kartu-produk {
+    width: calc(50% - 6px);
+  }
+}
+
+#hasil {
+  display: none;
+}
+
+#hasil table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#hasil th,
+#hasil td {
+  border: 1px solid #ecd0d8;
+  padding: 12px 14px;
+  text-align: left;
+  color: #49343a;
+}
+
+#hasil th {
+  background-color: #f8e2e7;
+  color: #a64d63;
+  text-align: center;
+}
+
+#hasil .kembali {
+  display: inline-block;
+  margin-top: 18px;
+  color: #a64d63;
+  font-weight: 600;
+  cursor: pointer;
+}
