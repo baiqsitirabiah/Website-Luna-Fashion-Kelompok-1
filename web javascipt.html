@@ -1,0 +1,15 @@
+
+function pesan(event) {
+    event.preventDefault();
+
+    let nama = document.getElementById("nama").value;
+    let produk = document.getElementById("produk").value;
+    let ukuran = document.getElementById("ukuran").value;
+    let jumlah = document.getElementById("jumlah").value;
+
+    alert("Pesanan berhasil!\n\n" +
+    "Nama: " + nama + "\n" +
+    "Produk: " + produk + "\n" +
+    "Ukuran: " + ukuran + "\n" +
+    "Jumlah: " + jumlah);
+}
