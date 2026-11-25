@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Luna Fashion V3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index_fiks.html">Home</a></li>
+        <li><a href="login_fiks.html">Login</a></li>
+        <li><a href="index (1).html">Produk</a></li>
+        <li><a href="kontak-from.html" class="active">Kontak</a></li>
+      </ul>
+      <div class="logo">LUNA FASHION</div>
+    </nav>
+
+    <section id="kontak-form" class="kontak">
+      <div id="formArea">
+        <h2>Hubungi Kami</h2>
+        <form id="formKontak">
+          <label for="nama">Nama</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Nama lengkap"
+            required
+          />
+
+          <label for="telp">Nomor Telepon</label>
+          <input
+            type="tel"
+            id="telp"
+            name="telp"
+            placeholder="No telepon"
+            required
+          />
+
+          <label for="subjek">Subjek</label>
+          <input
+            type="text"
+            id="subjek"
+            name="subjek"
+            placeholder="Nama pesanan"
+          />
+
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            rows="5"
+            placeholder="Tulis pesananmu di sini"
+            required
+          ></textarea>
+
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+
+      <div id="hasil">
+        <h2>Data Kontak Luna Fashion</h2>
+        <table>
+          <tr>
+            <th>Data</th>
+            <th>Hasil</th>
+          </tr>
+          <tr>
+            <td>Nama</td>
+            <td id="hasilNama"></td>
+          </tr>
+          <tr>
+            <td>Nomor Telepon</td>
+            <td id="hasilTelepon"></td>
+          </tr>
+          <tr>
+            <td>Subjek</td>
+            <td id="hasilSubjek"></td>
+          </tr>
+          <tr>
+            <td>Pesan</td>
+            <td id="hasilPesan"></td>
+          </tr>
+        </table>
+        <a class="kembali" onclick="location.reload()">Kembali ke Kontak</a>
+      </div>
+    </section>
+
+    <script src="kontak.js"></script>
+  </body>
+</html>
