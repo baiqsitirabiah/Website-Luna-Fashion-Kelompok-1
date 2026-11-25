@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luna Fashion</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">LUNA FASHION</div>
+      <a href="index_fiks.html">Home</a>
+      <a href="login_fiks.html">Login</a>
+      <a href="index (1).html" class="active">Produk</a>
+      <a href="kontak-from.html">Kontak</a>
+      <a href="daftar_fiks.html">Daftar</a>
+      <a href="putri.html">tentang</a>
+      <a href="pemesanan.html">pemesanan</a>
+    </nav>
+
+    <section id="produk">
+      <h2 class="judul-bagian">Produk Kami</h2>
+      <div class="produk">
+        <div class="kartu-produk">
+          <img src="baju kemeja atasan.jpg" alt="Kemeja" />
+          <h3>Kemeja</h3>
+          <button class="tombol-tambah" onclick="tampilkan('model-baju')">
+            Lihat Model
+          </button>
+        </div>
+
+        <div class="kartu-produk">
+          <img src="celana jeans.jpg" alt="Celana Jeans" />
+          <h3>Celana Jeans</h3>
+          <button class="tombol-tambah" onclick="tampilkan('model-celana')">
+            Lihat Model
+          </button>
+        </div>
+
+        <div class="kartu-produk">
+          <img src="pasmina ceruty baby doll.jpg" alt="Hijab" />
+          <h3>Hijab</h3>
+          <button class="tombol-tambah" onclick="tampilkan('model-pasmina')">
+            Lihat Model
+          </button>
+        </div>
+
+        <div class="kartu-produk">
+          <img src="tas selempang.jpg" alt="Tas Selempang" />
+          <h3>Tas Selempang</h3>
+          <button class="tombol-tambah" onclick="tampilkan('model-tas')">
+            Lihat Model
+          </button>
+        </div>
+
+        <div class="kartu-produk">
+          <img src="rok panjang wanita kekinian.jpg" alt="Rok Panjang" />
+          <h3>Rok Panjang</h3>
+          <button class="tombol-tambah" onclick="tampilkan('model-rok')">
+            Lihat Model
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="model" id="model-baju" style="display: none">
+      <h2 class="judul-bagian">Model Kemeja</h2>
+      <div class="produk">
+        <div class="kartu-produk">
+          <img src="baju kemeja atasan.jpg" alt="Blouse Tali Mocha" />
+          <h3>Blouse Tali Mocha</h3>
+          <span class="harga">Rp150.000</span>
+        </div>
+        <div class="kartu-produk">
+          <img src="baju atasan piks.jpeg" alt="Kemeja Linen Olive" />
+          <h3>Kemeja Linen Olive</h3>
+          <span class="harga">Rp145.000</span>
+        </div>
+        <div class="kartu-produk">
+          <img src="bajuu piksss.jpeg" alt="Kemeja Oversize Cream" />
+          <h3>Kemeja Oversize Cream</h3>
+          <span class="harga">Rp75.000</span>
+        </div>
+      <button
+        class="tombol-tambah"
+        style="width: 200px; margin: 0 auto 40px"
+        onclick="tutupSemua()"
+      >
+        Tutup
+      </button>
+    </section>
+
+    <section class="model" id="model-celana" style="display: none">
+      <h2 class="judul-bagian">Model Celana Jeans</h2>
+      <div class="produk">
+        <div class="kartu-produk">
+          <img src="celana jeans.jpg" alt="baggy jeans" />
+          <h3>baggy jeans</h3>
+          <span class="harga">Rp150.000</span>
+        </div>
+        <div class="kartu-produk">
+          <img src="cutbray jeans lipat bawahan.jpg" alt="cut bray" />
+          <h3>cut bray</h3>
+          <span class="harga">Rp100.000</span>
+        </div>
+      </div>
+      <button
+        class="tombol-tambah"
+        style="width: 200px; margin: 0 auto 40px"
+        onclick="tutupSemua()"
+      >
+        Tutup
+      </button>
+    </section>
+
+    <section class="model" id="model-pasmina" style="display: none">
+      <h2 class="judul-bagian">Model Hijab</h2>
+      <div class="produk">
+        <div class="kartu-produk">
+          <img src="pasmina ceruty baby doll.jpg" alt="Pasmina Sage, Lilac, Black, Camel, Dusty Pink" />
+          <h3>Pasmina Sage, Lilac, Black, Camel, Dusty Pink</h3>
+          <span class="harga">Rp30.000</span>
+        </div>
+        <div class="kartu-produk">
+          <img src="jilbab biru piks.jpeg" alt="Hijab Segi Empat Dusty Mauve" />
+          <h3>Hijab Segi Empat Dusty Mauve</h3>
+          <span class="harga">Rp25.000</span>
+        </div>
+        <div class="kartu-produk">
+          <img src="jilbab warna pink.jpeg" alt="Hijab Segi Empat Dusty Mauve" />
+          <h3>Hijab Segi Empat Dusty Mauve</h3>
+          <span class="harga">Rp25.000</span>
+        </div>
+      </div>
+      <button
+        class="tombol-tambah"
+        style="width: 200px; margin: 0 auto 40px"
+        onclick="tutupSemua()"
+      >
+        Tutup
+      </button>
+    </section>
+
+    <section class="model" id="model-tas" style="display: none">
+      <h2 class="judul-bagian">Model Tas Selempang</h2>
+      <div class="produk">
+        <div class="kartu-produk">
+          <img src="tas selempang.jpg" alt="Tas Tangan Selempang Cream" />
+          <h3>Tas Tangan Selempang Cream</h3>
+          <span class="harga">Rp50.000</span>
+        </div>
+        <div class="kartu-produk">
+          <img src="model serut.jpg" alt="Tas Serut Rantai Mini" />
+          <h3>Tas Serut Rantai Mini</h3>
+          <span class="harga">Rp35.000</span>
+        </div>
+      </div>
+      <button
+        class="tombol-tambah"
+        style="width: 200px; margin: 0 auto 40px"
+        onclick="tutupSemua()"
+      >
+        Tutup
+      </button>
+    </section>
+
+    <section class="model" id="model-rok" style="display: none">
+      <h2 class="judul-bagian">Model Rok Panjang</h2>
+      <div class="produk">
+        <div class="kartu-produk">
+          <img src="rok panjang wanita kekinian.jpg" alt="Rok Payung Lipit" />
+          <h3>Rok Payung Lipit</h3>
+          <span class="harga">Rp80.000</span>
+        </div>
+        <div class="kartu-produk">
+          <img src="rok piks.jpeg" alt="Rok Plisket" />
+          <h3>Rok Plisket</h3>
+          <span class="harga">Rp60.000</span>
+        </div>
+      </div>
+      <button
+        class="tombol-tambah"
+        style="width: 200px; margin: 0 auto 40px"
+        onclick="tutupSemua()"
+      >
+        Tutup
+      </button>
+    </section>
+    <script src="produk.js"></script>
+  </body>
+</html>
